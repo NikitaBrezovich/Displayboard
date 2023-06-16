@@ -1,0 +1,35 @@
+
+.feature {
+    background-size: 100% !important;
+    border-radius: 20px;
+}
+
+.qrcode {
+    width: 250px;
+    height: 250px;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+.mobile-form {
+    padding: 50px;
+}
+
+.body-color {
+    background-color: #727272;
+    
+}
+
+.text-color {
+    color: aliceblue;
+}
+
+.padding {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
