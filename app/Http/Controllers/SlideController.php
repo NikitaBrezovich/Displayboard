@@ -72,6 +72,8 @@ class SlideController extends Controller
         } else {
             $slide->image_path = null;
         }
+
+
         $request = $request->except(['image', 'sliders']);
         $slide->update($request);
         $slide->sliders()->sync($sliders);

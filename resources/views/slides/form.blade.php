@@ -118,8 +118,8 @@
     </select>
 </div>
 <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" id="customCheck1" name="active" value="{{isset($slide) && $slide->active === 1 ? '0' : '1' }}" {{isset($slide) && $slide->active === 1 ? 'checked' : ''}}>
-    <label class="custom-control-label" for="customCheck1">Active</label>
+    <input type="checkbox" class="custom-control-input" id="customCheck1" name="active" value="{{isset($slide) && !$slide->active === 1 ? '0' : '1' }}" {{isset($slide) && $slide->active === 1 ? 'checked' : ''}} {{isset($slide) && $slide->active === 1 ? 'disabled' : ''}} id="{{isset($slide) ? 'flexCheckDisabled' : 'customCheck1'}}">
+    <label class="custom-control-label" for="{{isset($slide) ? 'flexCheckDisabled' : 'customCheck1'}}">Active</label>
 </div>
 <div class="my-6 text-center d-flex">
     <button class="btn btn-success">Speichern</button>
